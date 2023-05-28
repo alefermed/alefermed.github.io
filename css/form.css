@@ -1,0 +1,15 @@
+p{font-family: monospace;font-weight: bolder;}
+#name,#optiom,#select,#radio,#dateps2{
+    color:forestgreen;font-family: cursive;
+}
+#radio2{color:red;font-weight: 700; font-family: monospace;}
+.form{text-align: center;border:solid red;color:white;}
+body{
+    width: 100%;
+    background-color: black;
+    background-image:url("../images/BACKgrounds/IMG_1078.gif"); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 75% bottom;
+    background-size: 75vw;
+}

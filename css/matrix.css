@@ -1,0 +1,10 @@
+
+.chip{
+    display: flex;flex-wrap: wrap;background-color: cornflowerblue;
+}
+
+h2 {text-align: center;}
+
+.menuchip{text-align:justify;display: flex;flex-direction: column;}
+
+.continerimg{display: flex;justify-content: center;}

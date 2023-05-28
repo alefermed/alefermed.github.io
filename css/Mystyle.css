@@ -1,0 +1,36 @@
+
+
+/*classes*/
+a:link { font-size:20pt;font-family: sans-serif
+        ;color:rgb(255, 255, 255);text-decoration:none;font-weight: bold;}
+a:visited { color:rgb(54, 4, 102);}
+#list-style{font-family:fantasy;font-size:25pt;}
+footer{text-align: center;text-decoration: none;}
+
+.crimson{
+    color:azure;font-family: sans-serif;background-color: rgb(19, 12, 56);}
+.orange{
+        background-color:#5874ce; padding:0%;
+}
+.blacksection{
+    background-color:#030000;
+    padding:1%;color:springgreen;font-family: monospace;display:flex;flex-wrap:wrap;
+}
+
+.gainsboro{
+      background-color:#ffffff;
+    font-family:sans-serif;display: flex;flex-wrap: wrap;}
+
+table {width:100%;
+        border-collapse: collapse;
+        }
+tr,td{border:solid;
+      color:rgb(117, 38, 38);
+    text-align: center;;width:1%;}
+
+
+    
+.tablexml{
+    color:yellow;background-color: #dae9ff;
+}
+

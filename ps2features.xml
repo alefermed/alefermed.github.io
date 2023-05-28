@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ps2
+[
+<!ELEMENT ps2 (especifications*)>
+<!ELEMENT  especifications (shcp,procesator,gpu,memory,type,year)>
+<!ELEMENT shcp (#PCDATA)>
+<!ELEMENT procesator (#PCDATA)>
+<!ELEMENT  gpu (#PCDATA)>
+<!ELEMENT memory (#PCDATA)>
+<!ELEMENT  type (#PCDATA)>
+<!ELEMENT  year (#PCDATA)>
+]>
+
+<ps2>
+
+<especifications>
+<shcp> 10000</shcp>
+<procesator>Emotion Engine 128 bits</procesator>
+<gpu> GS-250nm 147 MHz </gpu>
+<dimensions>302 mm x 79 mm x 183 mm</dimensions>
+<type>FAT</type>
+<year> 2000-</year>
+</especifications>
+
+
+<especifications>
+<shcp> 15000</shcp>
+<procesator>Emotion Engine 128 bits</procesator>
+<gpu> GS-250nm 147 MHz</gpu>
+<dimensions>302 mm x 79 mm x 183 mm</dimensions>
+<type>FAT</type>
+<year> 2003</year>
+</especifications>
+
+<especifications>
+<shcp> 50000</shcp>
+<procesator>Emotion Engine 128 bits</procesator>
+<gpu>EE+GS-90nm  147mhz</gpu>
+<dimensions>302 mm x 79 mm x 183 mm</dimensions>
+<type>SLIM</type>
+<year> 2004</year>
+</especifications>
+
+<especifications>
+<shcp> 70000</shcp>
+<procesator>Emotion Engine 128 bits</procesator>
+<gpu>EE+GS-90nm  147mhz</gpu>
+<dimensions> 230 mm x 28 mm x 152 mm,</dimensions>
+<type>SLIM</type>
+<year> 2006</year>
+</especifications>
+
+<especifications>
+<shcp> 90000</shcp>
+<procesator>Emotion Engine 128 bits</procesator>
+<gpu> EE+GS-90nm  147mhz</gpu>
+<dimensions> 230 mm x 28 mm x 152 mm,</dimensions>
+<type>SSLIM</type>
+<year> 2007</year>
+</especifications>
+
+
+<especifications>
+<shcp> 95002</shcp>
+<procesator>Emotion Engine 128 bits</procesator>
+<gpu>EE+GS-90nm  147mhz</gpu>
+<dimensions> 230 mm x 28 mm x 152 mm,</dimensions>
+<type>SSLIM</type>
+<year> 2009</year>
+</especifications>
+
+</ps2>

@@ -1,0 +1,141 @@
+<!DOCTYPE html> 
+
+<html lang="EN">
+    
+<head>
+<link rel="stylesheet"  href="css/w3.css ">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/form.css">
+<title> formulary</title>
+</head>
+<body> 
+    
+<div class="form">
+<h2> What do you think of the website?</h2>
+    
+<p> 1.Write your name:</p>
+<input id="text">
+<p id="name"></p>
+    
+<p>2. When was came out the PlayStation2?</p>
+    
+<input type="date" name="ps2" id="ps2">
+<p id="dateps2"></p>
+    
+<p>3.Did you find it useful?</p>
+
+<select id="yesorno">
+  <option  value="yes"> yes</option>
+  <option  value="no">no</option>
+    
+ 
+ </select>
+
+   <p id="option"></p>
+
+<p>4. cual fue el juego que es consideredo como el mas vendido?</p>
+ <input type="radio" name="AAA" value= "MGS3" id="q51"> Metal Gear Solid 3 Snake eater.<br>
+
+ <input type="radio" name="AAA" value="GOW2" id="q52"> God Of War2.<br>
+
+ <input type="radio" name="AAA" value="GTA" id="q53"> Grand Thef Auto San Andreas.<br>
+
+ <input type="radio"name="AAA" value="GT3" id="q54"> Gran Turismo 3 Real driving simulator.
+<br><br>
+   
+    
+<p id="radio"></p>
+
+<p id="radio2"></p>
+    
+    
+    
+    
+<p>5.which mod did you find the most difficult to execute ?</p>
+<select id="level">
+ 
+ <option  value="HDDBOOT">HDDBOOT</option>
+ <option  value="MX4SIO">MX4SIO</option>
+ <option  value="MATRIX">MATRIX</option>
+ <option value="FREEDVDBOOT">FREEDVDBOOT</option>
+   
+</select>
+ <p id="select"></p>
+
+<br><br>
+
+<button onclick="send()">send</button>
+    
+ 
+    </div>
+
+
+<script>
+
+    
+function send() {
+var name = document.getElementById("text").value;
+    document.getElementById("name").innerHTML = "Hello and just in case, good morning, good afternoon, and good night, " + name + "!";
+
+var usefulOption = document.getElementById("yesorno").value;
+    if (usefulOption === "yes") {
+        document.getElementById("option").innerHTML = "Congratulations! You already have a customized PS2.";}
+    else if (usefulOption === "no"){
+    document.getElementById("option").innerHTML = "Try again and check the specifications of your console.";}
+    
+    
+    
+var q1 = document.getElementById("ps2").value;
+var resultElement = document.getElementById("dateps2");
+ if(q1 === "04-03-2000" ){
+resultElement.innerHTML = "correct answer";
+
+ }else if (q1=="") {
+resultElement.innerHTML = "write a date!!!";
+}else { resultElement.innerHTML = "that is not the answer";
+      }
+        
+    
+    
+    
+var q51 = document.getElementById("q51").checked;
+var q52 = document.getElementById("q52").checked;
+var q53 = document.getElementById("q53").checked;
+var q54 = document.getElementById("q54").checked;
+var resultradioElement = document.getElementById("radio");
+var incorrectElement = document.getElementById("radio2")
+if (q53 ){
+    resultradioElement.innerHTML = "Yes the most sold is Grand Thef Auto, the ps2 is territory of Grove Street"}
+    
+    else { incorrectElement.innerHTML = "incorrect you have no idea about video games "}
+    
+    
+   
+    
+var difficultMode = document.getElementById("level").value;
+    
+document.getElementById("select").innerHTML = "Most difficult mode: " + difficultMode;
+    
+var selectElement = document.getElementById("select");
+if (difficultMode === "HDDBOOT") {
+    selectElement.innerHTML = " Really if it was just putting files on a disk and put it to the ps2 and the program is very easy to use.";
+  } else if (difficultMode === "MX4SIO"){
+      selectElement.innerHTML = "Normal if you tried to do it homemade as you need to know how to solder with tin or want to spend the money on a modmemorycard."
+  } else if (difficultMode === "MATRIX"){
+      selectElement.innerHTML ="The oldest and most difficult method as you can damage the ps2, the normal method is to take it to a technician to 'unlock' it.";
+  }else if (difficultMode === "FREEDVDBOOT") {
+      selectElement.innerHTML = "maybe you don't like the reader"
+  }
+    
+    
+}
+    
+  
+  
+
+  
+
+
+</script>
+</body>
+</html>

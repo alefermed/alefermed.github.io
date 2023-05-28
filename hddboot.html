@@ -1,0 +1,148 @@
+ <!DOCTYPE html> 
+
+<html lang="EN"> 
+<head>
+<link rel="stylesheet"  href="css/w3.css">
+<link rel="stylesheet"  href="css/common.css">
+<link rel="stylesheet" href="css/hddboot.css">
+
+<title> Custom Playstation</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    
+      
+<body>
+<div class= "continer col-12 col-s-12">
+<header class="crimson col-12 col-s-12">
+<h1 id="flecha">CUSTOM 
+PLAYSTATION2-HDDBOOT </h1>
+</header>
+</div>
+
+<nav class="col-12 col-s-12 ">
+
+ <ul class="menu_movil menu_drop">
+       <li class="botonmenu">
+         <a href="#menu" class="size_icon"> <i class="fa fa-bars">
+        </i></a>
+         
+<ul class="menu_movil-menu_drop"> 
+        <li class="navred col-2,5 col-s-12 "><a href="index.html">HOME</a> </li>
+        <li class="navred col-3 col-s-12 "><a href="HDDboot.html">HDBOOT</a></li>
+        <li class="navred col-3 col-s-12 "><a href="M4XIO.html">M4XIO</a></li>
+        <li class="navred col-3 col-s-12 "><a href="Matrix.html">MATRIX</a></li>
+        <li class="navred col-3 col-s-12 "><a href="Gallery.html">GALLERY</a></li>
+</ul>
+</li>
+</ul>  
+
+<ul class="menu_pc menu_drop">
+<li class="navred col-2,5 col-s-12 "><a href="index.html">HOME</a> </li>
+        <li class="navred col-3 col-s-12 "><a href="HDDboot.html">HDBOOT</a></li>
+        <li class="navred col-3 col-s-12 "><a href="M4XIO.html">M4XIO</a></li>
+        <li class="navred col-3 col-s-12 "><a href="Matrix.html">MATRIX</a></li>
+        <li class="navred col-3 col-s-12 "><a href="Gallery.html">GALLERY</a></li>
+</ul>
+</nav>
+
+    
+<main class="continer">
+   
+
+    <section class ="hdd col-12 col-s-12">
+        <h2 id="title">How to properly install FreeHdBoot </h2>
+    </section>
+
+<section class=" background col-6 col-s-12"> 
+       
+        <h3><b> Hardware</b> </h3>
+<ul> 
+<li>PS2 Network adapter 
+<ul>
+<li> for expansion bay models SCPH-3xxxx or SCPH-5xxxx
+        the adapters are SCPH-10281 or SCPH-10350 - (generic adapters
+        usage is discouraged due to their poor design)
+</li>
+<li>for PCMCIA models SCPH-1X000 the needed parts are(SCPH-20400 + SCPH-10190 + SCPH-10200) you can also search for the full kit (either SCPH-10210 or SCPH-10390) </li>
+</ul>
+</li>
+<li>Hard-Drive with a size between 40gb and 2T </li>
+    <li> USB storage device formatted into FAT32 (free space is not that inportant, 50mb free should suffice)</li></ul>
+</section>
+
+ <section class=" background col-6 col-s-12">
+<h3> <b> Software</b></h3>
+<ul>
+<li> Paste in the USB:
+<ul><li> FreeMcBoot/FreeHdBoot installer </li>
+        <li>ULaunchELF</li>
+</ul>
+<li> Download into tour pc:
+        <ul> <li> HDL Batch installer </li></ul>
+
+</li></ul>
+</section>
+
+<section class=" hdd col-12 col-s-12">
+<h3> Installation</h3>
+<p>Disconnect the console form the power source (or use the switch on the back)
+        Plug the HDD to the console and the USB device into one of the USB ports
+        Connect the console back to he power source (or use the switch from the back again)
+        Turn on the console, the HDD should be powered on
+</p>
+<p><b> Format the HDD</b> 
+</p>Now that you are in uLaunchELF, enter the filebrowser option.
+Then navigate to the mass:/ device (this is the USB device you plugged before)
+Now try to locate the uLaunchELF ELF file that you downloaded before and open 
+it (it should load a new uLaunchELF menú with a different color scheme like seen in this video)
+When it opens up, open filebrowser again.
+This time navigate to MISC/ and open the HDDManager subprogram.
+After a few seconds, a new menú should appear, showing information about the HDD unit.
+Press R1 and choose the option Format
+Now that you are in uLaunchELF, enter the filebrowser option.
+Then navigate to the mass:/ device (this is the USB device you plugged before)
+Now try to locate the uLaunchELF ELF file that you downloaded before and open it 
+(it should load a new uLaunchELF menú with a different color scheme like seen in this video
+When it opens up, open filebrowser again.
+This time navigate to MISC/ and open the HDDManager subprogram.
+After a few seconds, a new menú should appear, showing information about the HDD unit.
+Press R1 and choose the option Format
+<br><br>
+<div class="center"> 
+<img src="images/FMCB/PS2_ELF_Loader.jpg" alt="menu">
+</div>
+Now press R1 again, this time choose the Create option
+A keyboard should appear, write +OPL (ALL UPPERCASE), And hit ok.
+After that a new dialog will appear, asking you to input partition size.
+Choose 768 if your HDD size is smaller than 750gb
+If it's larger than 750gb, choose 1024 or 1536
+Now press ok, the partition table should reload, showing the new +OPL partition at the end of the list
+Now press triangle, you should go back to the first menú.
+
+<p> <b> Installing FreeHdBoot</b><br>
+        Open filebrowser again.
+        Navigate to mass:/ and locate the FreeMcBoot installer folder.
+        Enter inside it and open the FMCBinstaller.ELF file
+        Wait untill the menú loads, then press R1 and choose Install FHDB
+        If it finished without errors then good job!
+        The HDD is ready to receive games.
+        And the FreeHdBoot installer automatically loaded wLaunchELF and OPL into the HDD.
+        The only thing left to do is configure OPL and install games from the PC
+       
+</p>
+</section>
+</main>
+    
+    
+        
+<footer class="purple">
+<p> © 2023 Customplaystation2</p>
+<a href="#flecha" class="flecha1">
+<img class= "flecha" src="images/BUTTONS/flecha-fotor-bg-remover-20230401171010.png" alt="matrixmenu">
+</a>
+</footer>
+</body>
+</html>
