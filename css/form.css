@@ -13,3 +13,7 @@ body{
     background-position: 75% bottom;
     background-size: 75vw;
 }
+
+.formbutton{
+ width: 5%; display: flex;align-content: end;
+}
