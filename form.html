@@ -65,7 +65,9 @@
 <br><br>
 
 <button onclick="send()">send</button>
-    
+
+<a  href ="index.html"><img class="formbutton" src ="images/BUTTONS/marcador(2).png"> </a> </div>
+
  
     </div>
 
@@ -75,9 +77,13 @@
     
 function send() {
 var name = document.getElementById("text").value;
+if (name === "" || name === null){    
+    document.getElementById("name").innerHTML = " please enter your name";
+} else {
     document.getElementById("name").innerHTML = "Hello and just in case, good morning, good afternoon, and good night, " + name + "!";
+}
 
-var usefulOption = document.getElementById("yesorno").value;
+    var usefulOption = document.getElementById("yesorno").value;
     if (usefulOption === "yes") {
         document.getElementById("option").innerHTML = "Congratulations! You already have a customized PS2.";}
     else if (usefulOption === "no"){
