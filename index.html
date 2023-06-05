@@ -167,7 +167,7 @@ function myFunction(xml) {
 
   var x, i, xmlDoc, table;
 
-// Obtenemos un objeto XMLDocument con el contenido del archivo xml del servidor
+// We get an XMLDocument object with the content of the xml file from the server
 
   xmlDoc = xml.responseXML;
 
@@ -177,20 +177,18 @@ table = "<tr><th>shcp</th><th>procesator</th><th>gpu</th><th>dimensions</th><th>
 
 
 
-// Obtenemos todos los nodos denominados CD del archivo xml
+// Get all nodes named "specifications" from the xml file
 
   x = xmlDoc.getElementsByTagName("especifications");
 
 
-
-// Hacemos un bucle recorriendo todos los elementos CD
+// We loop through all the elements specified.
 
   for (i = 0; i < x.length; i++) {
 
 
 
-// Del elemento X, obtenemos del primer elemento denominado "artist"
-
+// We loop through all the elements specified.
    table += "<tr><td>" +
 
     x[i].getElementsByTagName("shcp")[0].childNodes[0].nodeValue +
